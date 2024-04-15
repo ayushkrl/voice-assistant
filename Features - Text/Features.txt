@@ -1,0 +1,20 @@
+""" 
+(00:00 - 27:03)
+speak Functions:- 
+How to use voices, 
+How to change voices,
+How to add voices,
+How to add external voices,
+How to add google assistant voices
+How to add cortana voice
+"""
+
+"""
+(27:03 - 37:37)
+Recognition
+TakeCommanand or listner/recognizer
+hindi takecommand
+Listening mode stuck (#womic use)
+data save for database etc
+"""
+
