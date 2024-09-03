@@ -97,9 +97,9 @@ def TakeCommand_Hindi():
         return ""
     
     #DATABASE
-    #kk = open('Data.txt', 'rb')
-    #kk.write(f": {query}")
-    #kk.close()
+    kk = open('Data.txt', 'rb')
+    kk.write(f": {query}")
+    kk.close()
 
     return query.lower()
     
@@ -154,10 +154,6 @@ def TaskExecution():
             Speak("Hello sir, I am your personal voice assistamt")
             Speak("How may I help you")
 
-        elif 'speech to text' in query:
-            Speak("Okay Sir")
-            print(f": {audio}")
-
         elif 'how are you' in query:
             Speak("I am fine sir")
             Speak("How about you?")
@@ -210,31 +206,6 @@ def TaskExecution():
             Speak("Okay Sir")
             webbrowser.open("https://www.facebook.com")
             Speak("Done Sir!")
-        
-        elif 'twitter' in query:
-            Speak("Okay Sir")
-            webbrowser.open("https://www.twitter.com")
-            Speak("Done Sir!")
-
-        elif 'instagram' in query:
-            Speak("Okay Sir")
-            webbrowser.open("https://www.instagram.com")
-            Speak("Done Sir!")
-
-        elif 'amazon' in query:
-            Speak("Okay Sir")
-            webbrowser.open("https://www.amazon.com")
-            Speak("Done Sir!")
-
-        elif 'flipkart' in query:
-            Speak("Okay Sir")
-            webbrowser.open("https://www.flipkart.com")
-            Speak("Done Sir!")
-        
-        elif 'cricbuzz' in query:
-            Speak("Okay Sir")
-            webbrowser.open("https://www.cricbuzz.com")
-            Speak("Done Sir!")
 
         elif 'music' in query:
             Music()
@@ -252,17 +223,4 @@ def TaskExecution():
         else:
             Speak("Not recognized")
 
-TakeCommand()
-input("Please enter your command")
-
-"""
-How to change voices
-How to change speech rate (default - 200)
-Assistant stuck at listening mode
-Youtube search
-Google Search
-Open a Website
-launch Facebook
-Wikipedia search
-Music play
-"""
+TaskExecution()
