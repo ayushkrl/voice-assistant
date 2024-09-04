@@ -129,7 +129,7 @@ def TaskExecution():
             hour = int(TakeCommand())
             Speak("Tell Minutes!")
             min = int(TakeCommand())
-            pywhatkit.sendwhatmsg("+916206468077",msg,hour,min,3)
+            pywhatkit.sendwhatmsg("+919999999999",msg,hour,min,3)
             Speak("Okay sir, Sending Whatsapp message!")
         
         else:
